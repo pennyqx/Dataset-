@@ -1,4 +1,4 @@
-# this is readme
+# Dataset construction based on CBCT projection truncation
 
 ### Requirements
 Env-Detail:[environment](https://github.com/pennyqx/Dataset-/blob/main/environment.yml)
