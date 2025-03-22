@@ -277,4 +277,3 @@ dependencies:
       - tqdm==4.67.1
       - triton==2.1.0
       - urllib3==2.2.3
-prefix: /home/woody/iwi5/iwi5241h/software/private/conda/envs/pyronn
