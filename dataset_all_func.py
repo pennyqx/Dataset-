@@ -343,13 +343,6 @@ volume_spacing = (1, 1, 1)
 number_of_projections = 180
 angular_range = np.pi
 
-test_input = "/home/hpc/iwi5/iwi5241h/CT/output/check/check_input"
-test_output_volume = "/home/hpc/iwi5/iwi5241h/CT/output/check/check_volume"
-test_output_fullsino = "/home/hpc/iwi5/iwi5241h/CT/output/check/check_full_sinogram"
-test_output_fullreco = "/home/hpc/iwi5/iwi5241h/CT/output/check/check_output_fullrcon"
-test_output_trunc_sino = "/home/hpc/iwi5/iwi5241h/CT/output/check/check_truncated_sinogram"
-test_output_trunc_recon = "/home/hpc/iwi5/iwi5241h/CT/output/check/check_output_truncate_recon"
-
 scale_factors = [0.75, 0.5, 0.25]  
 
 all_volumes = process_and_save_all_dicom(test_input, test_output_volume)
