@@ -302,7 +302,7 @@ def create_truncated_proj(full_sinogram, scale_factor, patient_id, output_dir):
     return sinogram_processed, mask
 """
 def zero_pad_sinogram(truncated_sinogram, original_shape):
-    """
+    
     Apply zero-padding to a truncated sinogram to restore its original detector shape.
 
     Parameters:
@@ -311,7 +311,7 @@ def zero_pad_sinogram(truncated_sinogram, original_shape):
 
     Returns:
     - padded_sinogram (numpy.ndarray): The zero-padded sinogram with original dimensions.
-    """
+    
 
     _, views, truncated_width, height = truncated_sinogram.shape
     original_width, original_height = original_shape
