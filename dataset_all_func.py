@@ -300,7 +300,7 @@ def create_truncated_proj(full_sinogram, scale_factor, patient_id, output_dir):
     print(f"Sinogram data saved at: {truncated_sinogram_output_path}")
 
     return sinogram_processed, mask
-
+"""
 def zero_pad_sinogram(truncated_sinogram, original_shape):
     """
     Apply zero-padding to a truncated sinogram to restore its original detector shape.
@@ -325,6 +325,7 @@ def zero_pad_sinogram(truncated_sinogram, original_shape):
                               mode='constant', constant_values=0)
 
     return padded_sinogram
+"""
 
 
 """test"""
@@ -368,7 +369,7 @@ for patient_data in all_volumes:
         truncated_sinogram, mask = create_truncated_proj(full_sinogram, scale_factor, patient_id, test_output_trunc_sino)
 
         # 3.2 **Apply zero-padding to the truncated projection**
-        padded_truncated_sinogram = zero_pad_sinogram(truncated_sinogram, detector_shape)
+        #padded_truncated_sinogram = zero_pad_sinogram(truncated_sinogram, detector_shape)
 
         # 3.3 **Reconstruct from the truncated projection**
         truncated_reconstruction = create_conebeam_backprojection(truncated_sinogram, geometry, 
